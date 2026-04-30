@@ -1,0 +1,8 @@
+[deps]
+EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
+Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
+XMLDict = "228000da-037f-5747-90a9-8195ccbf91a5"

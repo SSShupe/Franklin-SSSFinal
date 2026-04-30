@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- HTML Meta Tags -->
+    <title>The New SSS Blog</title>
+    <meta name="description" content="" />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="The New SSS Blog" />
+    <meta
+      itemprop="description"
+      content="My new static site blog created with Franklin.jl and the Julia Programming Language"
+    />
+    <meta
+      itemprop="image"
+      content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{if hasmath}} {{insert head_katex.html }} {{end}} {{if hascode}} {{insert
+    head_highlight.html }} {{end}} {{insert head_fontawesome.html}} {{insert
+    style.html}} {{isdef title}}
+    <title>{{fill title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+      {{end}}
+      <!--
+      Facebook
+      Meta
+      Tags
+      --
+    />
+    <meta property="og:url" content="https://ssshupe.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The New SSS Blog" />
+    <meta
+      property="og:description"
+      content="My new static site blog created with Franklin.jl and the Julia Programming Language"
+    />
+    <meta
+      property="og:image"
+      content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The New SSS Blog" />
+    <meta
+      name="twitter:description"
+      content="My new static site blog created with Franklin.jl and the Julia Programming Language"
+    />
+    <meta
+      name="twitter:image"
+      content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="title" href="/"
+        ><center><h1>The New SSS Blog</h1></center></a
+      >
+      {{ insert navbar.html }}
+    </header>
+    <main>
+      <!-- Content appended here -->
+    </main>
+  </body>
+</html>
