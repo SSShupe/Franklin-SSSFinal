@@ -1,14 +1,14 @@
 body {
-  font-family: 'IBM Plex Sans', Verdana, sans-serif;
+  font-family: 'Roboto', 'Lato', 'Lora', Verdana, sans-serif;
   margin: auto;
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  background-color: #fff;
+  background-color: #f9f6ee;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
-  color: #444;
+  color: #121212;
 }
 
 h1,
@@ -33,7 +33,7 @@ a {
 }
 
 .title span {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 nav a {
@@ -100,6 +100,56 @@ footer {
   float: right;
 }
 
+/* social share buttons */
+.share-section {
+  margin: 2rem 0 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.share-label {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.share-buttons {
+  display: flex;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: white;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.share-btn:hover {
+  opacity: 0.82;
+  transform: scale(1.1);
+  color: white;
+}
+
+.share-facebook  { background: #1877F2; }
+.share-bluesky   { background: #0085ff; }
+.share-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.share-threads   { background: #111; }
+.share-mastodon  { background: #6364FF; }
+.share-whatsapp  { background: #25D366; }
+.share-email     { background: #555; }
+.share-twitter   { background: #c00; }
+
 /* blog posts */
 ul.blog-posts {
   list-style-type: none;
@@ -160,4 +210,9 @@ ul.blog-posts li a:visited {
   .helptext {
     color: #aaa;
   }
+
+  .share-section { border-top-color: #555; }
+  .share-label   { color: #aaa; }
+  .share-threads { background: #ccc; color: #000; }
+  .share-threads:hover { color: #000; }
 }
