@@ -128,7 +128,7 @@ function hfun_photos()
     end
     io = IOBuffer()
     for i in 1:25
-        write(io, """<figure><img src="$(large_urls[i])" alt=""/><figcaption><center><b>"$(titles[i])"</b></center></figcaption></figure><br>""")
+        write(io, """<figure><img src="$(large_urls[i])" alt="$(titles[i])"/><figcaption><em>$(titles[i])</em></figcaption></figure><br>""")
     end
     return String(take!(io))
 end
@@ -136,5 +136,17 @@ end
 function hfun_date()
     d = locvar("date")
     return Dates.format(d, "U d, Y")
+end
+
+function lx_imgcap(lxc, _)
+    url = Franklin.content(lxc.braces[1])
+    caption = Franklin.content(lxc.braces[2])
+    return """<figure><img src="$url" alt="$caption"><figcaption><em>$caption</em></figcaption></figure>"""
+end
+
+function hfun_featuredimage()
+    img_url = locvar(:featured_image)
+    (isnothing(img_url) || isempty(img_url)) && return ""
+    return """<figure class="featured-image"><img src="$img_url" alt=""></figure>"""
 end
 

@@ -7,13 +7,15 @@
     <a href="#" class="share-btn share-bluesky" title="Share on Bluesky" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-bluesky"></i>
     </a>
-    <a href="#" class="share-btn share-instagram" title="Share on Instagram (copies link on desktop)" onclick="event.preventDefault(); shareInstagram();">
+    <a href="#" class="share-btn share-instagram" title="Share on Instagram (copies link on desktop)"
+      onclick="event.preventDefault(); shareInstagram();">
       <i class="fa-brands fa-instagram"></i>
     </a>
     <a href="#" class="share-btn share-threads" title="Share on Threads" target="_blank" rel="noopener noreferrer">
       <i class="fa-brands fa-threads"></i>
     </a>
-    <a href="#" class="share-btn share-mastodon" title="Share on Mastodon" onclick="event.preventDefault(); shareMastodon();">
+    <a href="#" class="share-btn share-mastodon" title="Share on Mastodon"
+      onclick="event.preventDefault(); shareMastodon();">
       <i class="fa-brands fa-mastodon"></i>
     </a>
     <a href="#" class="share-btn share-whatsapp" title="Share via WhatsApp" target="_blank" rel="noopener noreferrer">
@@ -29,46 +31,46 @@
 </div>
 
 <script>
-(function () {
-  var url   = encodeURIComponent(window.location.href);
-  var title = encodeURIComponent(document.title);
+  (function () {
+    var url = encodeURIComponent(window.location.href);
+    var title = encodeURIComponent(document.title);
 
-  var fb = document.querySelector('.share-facebook');
-  if (fb) fb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+    var fb = document.querySelector('.share-facebook');
+    if (fb) fb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
 
-  var bsky = document.querySelector('.share-bluesky');
-  if (bsky) bsky.href = 'https://bsky.app/intent/compose?text=' + title + '%20' + url;
+    var bsky = document.querySelector('.share-bluesky');
+    if (bsky) bsky.href = 'https://bsky.app/intent/compose?text=' + title + '%20' + url;
 
-  var threads = document.querySelector('.share-threads');
-  if (threads) threads.href = 'https://www.threads.net/intent/post?text=' + title + '%20' + url;
+    var threads = document.querySelector('.share-threads');
+    if (threads) threads.href = 'https://www.threads.net/intent/post?text=' + title + '%20' + url;
 
-  var wa = document.querySelector('.share-whatsapp');
-  if (wa) wa.href = 'https://api.whatsapp.com/send?text=' + title + '%20' + url;
+    var wa = document.querySelector('.share-whatsapp');
+    if (wa) wa.href = 'https://api.whatsapp.com/send?text=' + title + '%20' + url;
 
-  var mail = document.querySelector('.share-email');
-  if (mail) mail.href = 'mailto:?subject=' + title + '&body=' + url;
-})();
+    var mail = document.querySelector('.share-email');
+    if (mail) mail.href = 'mailto:?subject=' + title + '&body=' + url;
+  })();
 
-function shareInstagram() {
-  var pageUrl = window.location.href;
-  if (navigator.share) {
-    navigator.share({ url: pageUrl, title: document.title }).catch(function () {});
-  } else if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(pageUrl).then(function () {
-      alert('Link copied to clipboard — paste it in the Instagram app to share.');
-    }).catch(function () {
+  function shareInstagram() {
+    var pageUrl = window.location.href;
+    if (navigator.share) {
+      navigator.share({ url: pageUrl, title: document.title }).catch(function () { });
+    } else if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(pageUrl).then(function () {
+        alert('Link copied to clipboard — paste it in the Instagram app to share.');
+      }).catch(function () {
+        prompt('Copy this link and paste it in Instagram:', pageUrl);
+      });
+    } else {
       prompt('Copy this link and paste it in Instagram:', pageUrl);
-    });
-  } else {
-    prompt('Copy this link and paste it in Instagram:', pageUrl);
+    }
   }
-}
 
-function shareMastodon() {
-  var instance = prompt('Enter your Mastodon server (e.g. mastodon.social):');
-  if (!instance) return;
-  instance = instance.replace(/^https?:\/\//, '').replace(/\/$/, '');
-  var text = encodeURIComponent(document.title + ' ' + window.location.href);
-  window.open('https://' + instance + '/share?text=' + text, '_blank', 'noopener,noreferrer');
-}
+  function shareMastodon() {
+    var instance = prompt('Enter your Mastodon server (e.g. mastodon.social):');
+    if (!instance) return;
+    instance = instance.replace(/^https?:\/\//, '').replace(/\/$/, '');
+    var text = encodeURIComponent(document.title + ' ' + window.location.href);
+    window.open('https://' + instance + '/share?text=' + text, '_blank', 'noopener,noreferrer');
+  }
 </script>

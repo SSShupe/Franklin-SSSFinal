@@ -10,10 +10,12 @@
       itemprop="description"
       content="My new static site blog created with Franklin.jl and the Julia Programming Language"
     />
-    <meta
-      itemprop="image"
-      content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg"
-    />
+    {{isnotempty featured_image}}
+    <meta itemprop="image" content="{{fill featured_image}}" />
+    {{end}}
+    {{isempty featured_image}}
+    <meta itemprop="image" content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg" />
+    {{end}}
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,10 +38,12 @@
       property="og:description"
       content="My new static site blog created with Franklin.jl and the Julia Programming Language"
     />
-    <meta
-      property="og:image"
-      content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg"
-    />
+    {{isnotempty featured_image}}
+    <meta property="og:image" content="{{fill featured_image}}" />
+    {{end}}
+    {{isempty featured_image}}
+    <meta property="og:image" content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg" />
+    {{end}}
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -48,10 +52,12 @@
       name="twitter:description"
       content="My new static site blog created with Franklin.jl and the Julia Programming Language"
     />
-    <meta
-      name="twitter:image"
-      content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg"
-    />
+    {{isnotempty featured_image}}
+    <meta name="twitter:image" content="{{fill featured_image}}" />
+    {{end}}
+    {{isempty featured_image}}
+    <meta name="twitter:image" content="https://live.staticflickr.com/65535/52862419608_8d6eece333_k_d.jpg" />
+    {{end}}
   </head>
   <body>
     <header>

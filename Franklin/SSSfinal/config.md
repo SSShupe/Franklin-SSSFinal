@@ -7,6 +7,7 @@ The website_* must be defined for the RSS to work
 @def website_url   = "https://alt.ssshupe.com"
 
 @def author = "Steven Shupe"
+@def featured_image = ""
 
 @def mintoclevel = 2
 

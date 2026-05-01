@@ -100,11 +100,30 @@ footer {
   float: right;
 }
 
+/* image captions */
+figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+/* featured image */
+.featured-image {
+  margin: 1.5rem 0;
+}
+
+.featured-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
 /* social share buttons */
 .share-section {
   margin: 2rem 0 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid #ddd;
+  text-align: center;
 }
 
 .share-label {
@@ -120,6 +139,7 @@ footer {
   gap: 0.55rem;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .share-btn {
@@ -141,14 +161,37 @@ footer {
   color: white;
 }
 
-.share-facebook  { background: #1877F2; }
-.share-bluesky   { background: #0085ff; }
-.share-instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
-.share-threads   { background: #111; }
-.share-mastodon  { background: #6364FF; }
-.share-whatsapp  { background: #25D366; }
-.share-email     { background: #555; }
-.share-twitter   { background: #c00; }
+.share-facebook {
+  background: #1877F2;
+}
+
+.share-bluesky {
+  background: #0085ff;
+}
+
+.share-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.share-threads {
+  background: #111;
+}
+
+.share-mastodon {
+  background: #6364FF;
+}
+
+.share-whatsapp {
+  background: #25D366;
+}
+
+.share-email {
+  background: #555;
+}
+
+.share-twitter {
+  background: #c00;
+}
 
 /* blog posts */
 ul.blog-posts {
@@ -211,8 +254,24 @@ ul.blog-posts li a:visited {
     color: #aaa;
   }
 
-  .share-section { border-top-color: #555; }
-  .share-label   { color: #aaa; }
-  .share-threads { background: #ccc; color: #000; }
-  .share-threads:hover { color: #000; }
+  figcaption {
+    color: #aaa;
+  }
+
+  .share-section {
+    border-top-color: #555;
+  }
+
+  .share-label {
+    color: #aaa;
+  }
+
+  .share-threads {
+    background: #ccc;
+    color: #000;
+  }
+
+  .share-threads:hover {
+    color: #000;
+  }
 }

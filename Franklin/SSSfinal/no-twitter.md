@@ -6,4 +6,6 @@ You shouldn't be. It's owned by a racist, fascist, ketamine-ingesting fool who h
 
 Oh yes, also ....
 
+![](/assets/BoycottTesla.jpg)
+
 

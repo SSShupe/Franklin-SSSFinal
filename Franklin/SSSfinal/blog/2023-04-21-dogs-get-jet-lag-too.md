@@ -1,6 +1,7 @@
 +++
 title = "Dogs get Jet-Lag Too"
 date = Date(2023, 04, 21)
+featured_image = "https://live.staticflickr.com/65535/52837796160_105e10f3d8_b.jpg"
 +++
 
 
@@ -9,11 +10,13 @@ date = Date(2023, 04, 21)
 ~~~
 _Posted {{date}}_
 
+{{featuredimage}}
+
 The bottom line after our first full two days in the new apartment in La Rochelle: Jetlag Triumphs! Especially when the two days haven’t been restful.
 
 Day 1 was dedicated to returning one rental car and getting another one. The big [Peugeot 5008](https://www.peugeot.fr/nos-vehicules/suv-peugeot-5008.html) that we’d gotten at the airport in Paris and driven to La Rochelle had to be returned by 11:30, and our new rental had to be picked up by noon. We ended up reversing that, picking up the new one before taking back the old. Neither transaction was entirely smooth.
 
-At [E.Leclerc](https://www.auto.leclerc/centre-auto/la-rochelle), the staff was flummoxed by the fact that our drivers’ licenses did not show the very first time we were licensed to drive (as the French drivers’ permits do). They require a driver to have been a licensed driver for a specified period (4 years I think), but the California license only references the date of issuance of the last renewal. Thus it looked to them like Suzie had only been driving since 2022, and that I’d only been driving since 2019. For a time it looked as if that might put the kibosh on our rental (which is a great deal, available only if you actually live in France: 217 euros per month plus 0.17 cents per km for a nice (if smallish) [Renault Megane](https://www.renault.fr/vehicules-particuliers/megane-4-berline-phase-2.html)). But our innate honest personalities and the fact that we were both in our 60s convinced the agreeable young clerk that we had, in fact, been driving for 40+ years, and the rental went through.
+At [E.Leclerc](https://www.auto.leclerc/centre-auto/la-rochelle), the staff was flummoxed by the fact that our drivers’ licenses did not show the very first time we were licensed to drive (as the French drivers’ permits do). They require a driver to have been a licensed driver for a specified period (4 years I think), but the California license only references the date of issuance of the last renewal. Thus it looked to them like Suzie had only been driving since 2022, and that I’d only been driving since 2019. For a time it looked as if that might put the kibosh on our rental (which is a great deal, available only if you actually live in France: 217 euros per month plus 0.17 cents per km for a nice (if smallish) [Renault Megane](https://www.renault.fr/vehicules-particuliers/megane-4-berline-phase-2.html). But our innate honest personalities and the fact that we were both in our 60s convinced the agreeable young clerk that we had, in fact, been driving for 40+ years, and the rental went through.
 
 The return of the Peugeot to Enterprise was difficult because there’s no lot at the office, which is located in a moderately congested area. You have to find a place to park, then walk to the office, or do what I did in the absence of any parking spots: park illegally and hope it didn’t get towed until the staff and I returned to the car. The car didn’t get towed, but the car was subject to a return inspection unlike any I’d been a part of – 20 minutes of going around and around the car and looking at everything in minute detail. They eventually found a small mark on one of the outside mirrors that cost me an extra 30 euros, which proves the old maxim, ‘Seek and You Shall Find.’
 
